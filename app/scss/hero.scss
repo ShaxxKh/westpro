@@ -1,0 +1,54 @@
+.fullWidth {
+	width: 100vw;
+	margin-left: -8rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.hero {
+	@extend .fullWidth;
+}
+
+.carousel-text {
+	width: 100vw;
+}
+
+.test-slide,
+.innovative-slide,
+.course-slide {
+	width: 100vw;
+	margin: 0;
+	background: url("../images/tree.jpg") no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 55rem;
+}
+
+.hero__carousel {
+	width: 100vw;
+}
+
+.hero-heading {
+	font-size: 3.5rem;
+	color: $colorWhite;
+}
+
+.hero-text {
+	font-size: 1.6rem;
+	color: $colorWhite;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.hero-btn {
+	font-size: 1.4rem;
+	color: $colorWhite;
+	width: 18rem;
+	height: 5rem;
+	background-color: $colorPrimary;
+	outline: none;
+	cursor: pointer;
+}
