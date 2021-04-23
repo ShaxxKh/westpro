@@ -4,12 +4,17 @@
 }
 
 .courses__carousel {
-	width: 100%;
+	// width: 100%;
 }
 
 .courses__slide {
 	border: 1px solid $colorPrimary;
 	height: 55rem;
+}
+
+.courses__slide--shorter {
+	max-width: 27rem;
+	height: 35rem;
 }
 
 .courses__heading {
@@ -84,4 +89,24 @@
 	position: absolute;
 	bottom: 2rem;
 	left: 2rem;
+}
+
+.carousel-dot {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: $colorGrayDots;
+	opacity: 0.25;
+	outline: none;
+	margin: 0.5rem;
+}
+
+.carousel-dot.active {
+	opacity: 1;
+}
+
+.carousel-dots-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
 }

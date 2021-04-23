@@ -1,5 +1,6 @@
 let heroTextCarousel = $(".carousel-text");
 const coursesCarousel = $(".courses__carousel");
+const staffCarousel = $(".staff__carousel");
 
 $(document).ready(function () {
 	heroTextCarousel.owlCarousel({
@@ -20,22 +21,27 @@ $(document).ready(function () {
 		animateOut: "animate__slideOutLeft",
 		animateIn: "animate__slideInRight",
 	});
-});
-
-$(document).ready(function () {
 	coursesCarousel.owlCarousel({
 		items: 3,
 		margin: 20,
 		autoplay: true,
 		loop: true,
 		autoplayTimeout: 5000,
-		// stageOuterClass: "hero__carousel",
-		// navContainerClass: "hero__nav-container",
-		// navText: [
-		// 	"<img class='hero__nav-img--left' src='./../images/left.svg'>",
-		// 	"<img class='hero__nav-img--right' src='./../images/right.svg'>",
-		// ],
-		// navClass: ["hero__nav-left", "hero__nav-right"],
+		dotClass: "carousel-dot",
+		dotsClass: "carousel-dots-container",
+		dotsEach: true,
+		animateOut: "animate__slideOutLeft",
+		animateIn: "animate__slideInRight",
+	});
+	staffCarousel.owlCarousel({
+		items: 4,
+		margin: 0,
+		autoplay: true,
+		loop: true,
+		autoplayTimeout: 5000,
+		dotClass: "carousel-dot",
+		dotsClass: "carousel-dots-container",
+		dotsEach: true,
 		animateOut: "animate__slideOutLeft",
 		animateIn: "animate__slideInRight",
 	});
