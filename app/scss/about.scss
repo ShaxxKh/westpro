@@ -1,54 +1,58 @@
-.about__westpro {
-	margin: 30px auto;
-	position: relative;
+.about__info {
+	display: flex;
+	justify-content: space-between;
 }
 
 .about {
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 50px;
-	left: -50px;
+	margin-top: 5rem;
+	// margin: 30px auto;
+	// position: relative;
+	// width: 100%;
+	// display: flex;
+	// justify-content: space-between;
+	// margin-top: 50px;
+	// left: -50px;
 }
 
-.about__item {
-	vertical-align: middle;
+.about__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about__text {
+	color: $colorSmallText;
+	font-size: 1.4rem;
+	line-height: 2.5rem;
+	margin-right: 10rem;
 }
 
 .about__title {
 	color: #333;
 	font-size: 30px;
+	display: inline-block;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 4rem;
 	text-transform: uppercase;
+	border-bottom: 2px solid $colorPrimary;
+	padding-bottom: 1rem;
+}
+
+.video {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 15%);
+	border: 10px solid $colorWhite;
 }
 
 .textBox {
-	color: #666;
-	font-size: 16px;
-	max-width: 100%;
-	line-height: 1.2;
-	margin-left: 120px;
-	margin-right: 120px;
 }
 
-.btn a {
-	position: absolute;
-	margin-top: 20px;
-	padding: 8px 20px;
-	color: #fff;
-	background: #202c45;
-	border-radius: 40px;
-	font-weight: 500;
+.about__btn {
+	margin-top: 2rem;
+	padding: 0.8rem 2rem;
+	color: $colorWhite;
+	background: $colorPrimary;
+	border-radius: 4rem;
+	font-weight: 700;
 	letter-spacing: 1px;
 	text-decoration: none;
-}
-
-.line {
-	border: 1px solid red;
-	width: 65px;
-	left: 50%;
-	transform: translate(-50%);
-	position: absolute;
 }
