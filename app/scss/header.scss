@@ -7,9 +7,9 @@
 }
 .fullWidth {
 	width: 100vw;
-	margin-left: -8rem;
-	padding-left: 8rem;
-	padding-right: 8rem;
+	margin-left: calc((100vw - 1400px) / -2);
+	padding-left: calc((100vw - 1400px) / 2);
+	padding-right: calc((100vw - 1400px) / 2);
 }
 .media-container {
 	@extend .fullWidth;

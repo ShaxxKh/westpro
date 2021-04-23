@@ -34,8 +34,8 @@ $(document).ready(function () {
 		animateIn: "animate__slideInRight",
 	});
 	staffCarousel.owlCarousel({
-		items: 4,
-		margin: 0,
+		items: 5,
+		margin: 20,
 		autoplay: true,
 		loop: true,
 		autoplayTimeout: 5000,
